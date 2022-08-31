@@ -1,0 +1,50 @@
+$color: #000000;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 20px;
+    height: 80px;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color;
+}
+
+.navbar a{
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: $color;
+
+    &:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+}
+
+.navbar__hover {
+    &:after {
+        display: block;
+        content: '';
+        border-bottom: 1px solid $color;
+        transform: scaleX(0);
+        transform-origin:  0% 50%;
+        transition: transform 0.5s ease-in-out;
+    };
+    &:hover:after {
+        transform: scaleX(1);
+    }
+}
+
+.navbar__active {
+    border-bottom: 1px solid $color;
+}
