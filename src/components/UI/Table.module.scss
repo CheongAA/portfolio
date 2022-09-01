@@ -1,0 +1,30 @@
+.table {
+  display: flex;
+  flex-direction: row;
+  margin: 360px 30px;
+}
+
+.table__title {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 10rem;
+}
+
+.table__row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5rem;
+  padding: 24px 0px;
+  border-top: 1px solid #000000;
+
+  &:last-child {
+    border-bottom: 1px solid #000000;
+  }
+
+  span {
+    font-family: "Montserrat";
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
