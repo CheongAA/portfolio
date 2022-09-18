@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import classes from "./Navbar.module.scss";
-import ROUTES from "../../routes";
+import ROUTES from "routes";
 
 const Navbar = () => {
   const { pathname } = useLocation();

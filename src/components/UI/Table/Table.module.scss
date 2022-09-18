@@ -1,0 +1,23 @@
+.table {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 50px;
+
+  h1 {
+    width: 20%;
+  }
+
+  ul {
+    width: 60%;
+    margin-left: 10%;
+  }
+
+  li {
+    border-top: 1px solid #000000;
+    padding: 5px;
+
+    &:last-child {
+      border-bottom: 1px solid #000000;
+    }
+  }
+}
